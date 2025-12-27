@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+ * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+body {
+    background-image:linear-gradient(110deg, #070707, #111127);
+    color: white;
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    background-image:linear-gradient(90deg, #111, #224);
+    text-align: center;
+    box-shadow: 0 0 20px 5px black;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+main {
+    margin: 0 auto;
+    width: 45vw;
+    min-width: 450px;
+}
+
+article {
+    border:5px solid #224;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color:rgba(34,34,68,0.25);
+    height: 380px;
+}
+
+div {
+    vertical-align: top;
+    height: 100%;
+    width: 49%;
+    display: inline-block;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+form {
+    margin: 0 auto;
+    width: 85%;
+}
+
+input {
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background:#070707;
+    border: 3px solid #224;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    padding: 2px;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    background-image:linear-gradient(135deg, #24d, #26c);
+    height: 35px;
+    border: 3px solid #24a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    padding: 0 15px;
+}   
+
+input[type="submit"] {
+    margin-left: auto;
+    display: block;
+    background-image:linear-gradient(135deg, #2d4, #2c6);
+    border: 3px solid #0a2;
+    color: black;
+}
+
+b  {font-weight: 800;}
+i  {font-weight: 100;
+    font-size: 15px;}
+h1 {font-weight: 700;}
+h2 {font-weight: 600;
+    text-align: center;}
+h3 {font-weight: 600;
+    display: inline;}
+a  {text-decoration: none;}
+
+footer {
+    width: 100%;
+    background-image:linear-gradient(90deg, #111, #224);
+    box-shadow: 0 0 20px 5px black;
+    margin-top: 25px;
+    padding: 20px 35px;
+}
+
+
+
+
+
+/* Debug borders 
+* {
+    border: 1px solid cyan;
+}
+header {
+    border: 1px solid lime;
+}
+main {
+    border: 1px solid yellow;
+}
+footer {
+    border: 1px solid red;
+}
+body {
+    border: 1px solid magenta;
+}
+article {
+    border: 1px solid magenta;
+}*/

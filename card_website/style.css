@@ -24,7 +24,7 @@ header {
 main {
     margin: 0 auto;
     width: 45vw;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 article {
@@ -49,6 +49,10 @@ img {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+
+li {
+    line-height: 30px;
 }
 
 form {

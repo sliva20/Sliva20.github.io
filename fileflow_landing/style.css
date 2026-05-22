@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    /* border: 0.5px solid red; */
+    color:white;
+    box-sizing: border-box;
+    font-family: Rubik, Arial;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+button {
+    background: linear-gradient(160deg,rgb(22, 62, 239), rgb(33, 39, 130));
+    border-color: rgb(19, 29, 75);
+    border-width: 3px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: transform ease 0.2s, box-shadow ease 0.3s;
+    box-shadow: rgb(56, 33, 130) 0 0 15px -5px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(160deg,rgb(30, 67, 233), rgb(35, 41, 120));
+    box-shadow:
+        rgb(56, 33, 130) 0 5px 20px -5px,
+        rgb(33, 56, 130) 0 0 15px 0px;
+    border-color: rgb(19, 29, 75);
+    border-width: 3px;
+    padding: 8px;
+    border-radius: 10px;
+    transform: translateY(-3px);
+}
+button:active {
+    background: linear-gradient(160deg,rgb(16, 52, 209), rgb(21, 26, 95));
+}
+
+img {
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: linear-gradient(160deg,rgb(27, 48, 138), rgb(17, 22, 85));
+}
+
+#nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+#nav-links {
+    display: flex;
+    gap:10px;
+}
+
+header{
+    padding: 12px;
+    height: 75vh;
+    background: linear-gradient(80deg,rgb(15, 25, 70), rgb(4, 4, 42));
+    align-content: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+header div img {
+    object-fit: contain;
+    width: 50vw;
+    max-height: 70vh;
+}
+
+#header-title {
+    width: 50%;
+    display: block;
+    margin-left: 36px;
+}
+
+#header-title span{
+    font-size: 48px;
+}
+
+#header-title span b{
+    font-size: 52px;
+}
+
+#header-title .download-button span {
+    font-size: 32px;
+}
+
+.download-button {
+    text-decoration: none;
+}
+
+.download-button button{
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   padding: 8px 15px;
+}
+.download-button button img{
+    width: 30px;
+}
+
+@media (max-width:1100px){
+    #header-title span{
+        font-size: 36px;
+    }
+    #header-title span b{
+        font-size: 40px;
+    }
+    #header-title button span{
+    font-size: 24px;
+    }
+    #header-title button img{
+        width: 24px;
+    }
+}
+
+#pricing {
+    display: flex;
+    background: linear-gradient(80deg,rgb(20, 34, 94), rgb(7, 7, 63));
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 20px;
+}
+
+#pricing div {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(6, 23, 77);
+    border-radius: 20px;
+    background: linear-gradient(160deg,rgb(30, 50, 143), rgb(17, 22, 85));
+    height: auto;
+}
+
+#pricing div ul{
+    border: 3px solid rgb(17, 22, 85);
+    border-radius: 12px;
+    padding: 4px 24px;
+    margin: 6px;
+}
+#pricing div ul li{
+    font-size: 22px;
+}
+
+#pricing div a {
+    margin-top: auto;
+}
+
+div#paid{
+    width: 55vw;
+    box-shadow: gold 0 0 50px -40px, gold 0 0 20px -10px, plum 0 0 5px;
+    transition: box-shadow ease 0.5s;
+}
+
+div#paid:hover {
+    box-shadow: gold 0 0 70px -50px, gold 0 0 35px -20px, plum 0 0 10px, gold 0 0 30px -20px inset;
+}
+
+#paid-name {
+    font-size: 22px;
+}
+#paid-name b {
+    font-size: 24px;
+}
+
+#paid a {
+    text-decoration: none;
+}
+#paid-btn{
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#paid-price s{
+    color: gray;
+    font-size: medium;
+    font-style: italic;
+}
+#paid-price span {
+    font-weight: bold;
+    text-shadow: 0 0 2px;
+}
+
+#paid-sale-timer {
+    border: solid 3px #8d0707;
+    border-radius: 10px;
+    background:linear-gradient(165deg, #d3201a, #af160b);
+    padding: 0 12px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#paid * {
+    margin: 4px;
+}

@@ -3,7 +3,7 @@
     /* border: 0.5px solid red; */
     color:white;
     box-sizing: border-box;
-    font-family: Rubik, Arial;
+    font-family: "Rubik", Arial;
     font-size: 20px;
 }
 body{
@@ -134,13 +134,13 @@ header div img {
 
 #pricing {
     display: flex;
-    background: linear-gradient(80deg,rgb(20, 34, 94), rgb(7, 7, 63));
+    background: linear-gradient(80deg,rgb(44, 69, 184), rgb(31, 31, 110));
     justify-content: space-evenly;
     align-items: stretch;
     padding: 20px;
 }
 
-#pricing div {
+.pricing-card {
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -151,17 +151,17 @@ header div img {
     height: auto;
 }
 
-#pricing div ul{
+.pricing-card ul{
     border: 3px solid rgb(17, 22, 85);
     border-radius: 12px;
     padding: 4px 24px;
     margin: 6px;
 }
-#pricing div ul li{
+.pricing-card ul li{
     font-size: 22px;
 }
 
-#pricing div a {
+.pricing-card a {
     margin-top: auto;
 }
 
@@ -190,7 +190,7 @@ div#paid:hover {
     padding: 10px 20px;
 }
 
-#paid-price s{
+#paid-price s, #gallery i{
     color: gray;
     font-size: medium;
     font-style: italic;
@@ -211,4 +211,72 @@ div#paid:hover {
 
 #paid * {
     margin: 4px;
+}
+
+#paid-tags {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    transform: translateX(20vw) translateY(-20px);
+
+}
+#paid-tags .recommended, #paid-tags .user-choice {
+    border: 3px solid rgb(165, 118, 18);
+    background-color: rgb(238, 224, 32);
+    border-radius: 12px;
+    padding: 4px 8px;
+    width: 100%;
+    color:black;
+    font-weight: bold;
+}
+
+#paid-tags .recommended{
+    box-shadow: rgb(238, 224, 32) 0 0 20px -5px;
+}
+
+#paid-tags .user-choice {
+    border: 3px solid rgb(75, 75, 75);
+    background-color: gray;
+    color: white;
+    font-weight: normal;
+}
+
+#stats {
+    background: linear-gradient(-45deg,rgb(30, 43, 102), rgb(14, 14, 92));
+}
+
+
+
+#gallery {
+    background: linear-gradient(80deg,rgb(17, 36, 124), rgb(7, 7, 51));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+#gallery img {
+    width: 50vw;
+}
+#gallery h1 {
+    font-size: 36px;
+}
+
+#small-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 36px;
+}
+
+div.gallery-card {
+    width: 25vw;
+    justify-content: center;
+}
+div.gallery-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }

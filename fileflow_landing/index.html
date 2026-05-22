@@ -10,7 +10,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="js/script.js" defer></script>
@@ -43,8 +43,35 @@
         </div>
         <h1>ВНИМАНИЕ: САЙТ В ПРОЦЕССЕ РАЗРАБОТКИ! ОН ЕЩЁ НЕ ЗАКОНЧЕН</h1>
     </header>
+    <section id="stats">
+        alotofstats
+    </section>
+    <section id="gallery">
+        <i>Здесь показаны фрагменты FileFlow версии Lite</i>
+        <h1>Понятный интерфейс</h1>
+        <img src="images/showcase 2.PNG">
+        <div id="small-gallery">
+            <div class="gallery-card">
+                <h1>Предпросмотр действий</h1>
+                <img src="images/preview.PNG" alt="">
+            </div>
+            <div class="gallery-card">
+                <h1>Обширные настройки</h1>
+                <img src="images/Settings showcase.PNG" alt="">
+            </div>
+            <div class="gallery-card">
+                <h1>Запрос перед выполнением</h1>
+                <img src="images/confirmation.PNG" alt=""><br>
+                <img src="images/done.PNG" alt="">
+            </div>
+        </div>
+    </section>
     <section id="pricing">
-        <div id="paid">
+        <div id="paid" class="pricing-card">
+            <div id="paid-tags">
+                <span class="recommended">Рекомендуем</span>
+                <span class="user-choice">Выбор пользователей</span>
+            </div>
             <span id="paid-name">FileFlow<b>Pro</b></span>
             <span id="paid-price"><s>$5.00</s><span>$1.99</span>*</span>
             <span id="paid-sale-timer">Loading..</span>
@@ -62,7 +89,7 @@
                 <button class="pricing-btn" id="paid-btn">Купить!</button>
             </a>
         </div>
-        <div id="free">
+        <div id="free" class="pricing-card">
             <span id="free-name">FileFlow Lite</span>
             <span id="free-price">$0.00</span>
             <ul>
@@ -78,14 +105,8 @@
         </a>
         </div>
     </section>
-    <section>
-        gallery
-    </section>
-    <section>
-        download
-    </section>
-    <section>
-        contact form
+    <section id="contact">
+        contact
     </section>
     <div id="landing-info">
         the warnings about the fakiness

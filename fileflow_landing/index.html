@@ -23,10 +23,10 @@
             <span>FileFlow</span>
         </div>
         <div id="nav-links">
-            <a href="#">Фичюрз</a>
+            <a href="#stats">Статистика</a>
+            <a href="#gallery">Функции</a>
             <a href="#pricing">Цены</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
+            <a href="#contact">Обратная связь</a>
         </div>
     </nav>
     <header>
@@ -44,7 +44,11 @@
         <h1>ВНИМАНИЕ: САЙТ В ПРОЦЕССЕ РАЗРАБОТКИ! ОН ЕЩЁ НЕ ЗАКОНЧЕН</h1>
     </header>
     <section id="stats">
-        alotofstats
+        <i>Данные обновляются каждые 20 минут</i>
+        <h1 class="stat-left">Посетило эту страницу <span id="stat-visitors">000000</h1>
+        <h1 class="stat-right"><span id="stat-downloads">000000</span> получили программу</h1>
+        <h1 class="stat-left">Приобрели FileFlow <b>Pro</b> <span id="stat-download-paid">000000</span></h1>
+        <h1 class="stat-right"><span id="stat-download-free">000000</span> Скачали бесплатную версию</h1>
     </section>
     <section id="gallery">
         <i>Здесь показаны фрагменты FileFlow версии Lite</i>
@@ -106,7 +110,18 @@
         </div>
     </section>
     <section id="contact">
-        contact
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f1b62608-01fe-477d-8236-2b07853d302b">
+            <input type="email" name="email" required>
+            <select name="topic">
+                <option value="prog-bug">Баг программы</option>
+                <option value="prog-feat">Улучшение программы</option>
+                <option value="site-bug">Баг сайта</option>
+                <option value="site-feat">Улучшение сайта</option>
+            </select>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <div id="landing-info">
         the warnings about the fakiness

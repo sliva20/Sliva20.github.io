@@ -104,7 +104,6 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     if (isFormValid) {
         this.submit()
         window.location.hash = 'sent';
-
     } else {
         switch (reason){
             case 1:
@@ -121,7 +120,12 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
 function checkHash() {
     if (window.location.hash === '#sent') {
         createPopup("Отправлено", "Ваше сообщение было отправлено разработчику! Он вам ответит на указанную электронную почту в скором времени.", "Ура")
+        alert("THANKS")
     }
 }
 
-window.addEventListener("hashchange", checkHash)
+if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', checkHash);
+} else {
+    checkHash();
+}

@@ -308,8 +308,15 @@ div.gallery-card img {
     object-fit: contain;
 }
 
+#contact h2 {
+    text-align: center;
+    margin: 8px;
+    margin-bottom: 16px;
+}
+
 #contact {
     padding: 32px;
+    padding-top: 8px;
     background: linear-gradient(80deg,rgb(17, 36, 124), rgb(7, 7, 51));
 }
 
@@ -320,11 +327,65 @@ div.gallery-card img {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 12px 24px;
     gap: 8px;
     width: 65%;
 }
 
 #contact form * {
     color: black;
+}
+
+#contact button {
+    color: white;
+    width: auto;
+    padding: 8px 24px;
+    align-self: center;
+}
+
+#contact form label {
+    color: white;
+}
+
+#contact form input, #contact form select, #contact form textarea {
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.popup-container {
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #00000099;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.popup {
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    max-width: 50vw;
+    text-align: center;
+}
+
+.popup-btn-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+footer {
+    background: linear-gradient(80deg,rgb(7, 16, 54), rgb(2, 2, 22));
+    padding: 24px 48px;
 }

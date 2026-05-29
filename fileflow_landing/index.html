@@ -26,7 +26,7 @@
             <a href="#stats">Статистика</a>
             <a href="#gallery">Функции</a>
             <a href="#pricing">Цены</a>
-            <a href="#contact">Обратная связь</a>
+            <a href="#sent">Обратная связь</a>
         </div>
     </nav>
     <header>
@@ -89,9 +89,7 @@
                 <li>Сортировка по названию</li>
                 <li>Поддержка 24/7</li>
             </ul>
-            <a href="javascript:alert('CUSTOM ALERT NOT IMPLEMENTED!')">
-                <button class="pricing-btn" id="paid-btn">Купить!</button>
-            </a>
+            <button class="pricing-btn" id="paid-btn">Купить!</button>
         </div>
         <div id="free" class="pricing-card">
             <span id="free-name">FileFlow Lite</span>
@@ -110,24 +108,30 @@
         </div>
     </section>
     <section id="contact">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <h2>Остались вопросы, нашли баг или хотите пледложить что-то по поводу улучшения? Здесь вы можете отправить ваше сообщение разработчику.</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="f1b62608-01fe-477d-8236-2b07853d302b">
-            <input type="email" name="email" required>
+
+            <label for="contact-email">Электронная почта для обратной связи:</label>
+            <input type="email" name="email" id="contact-email" placeholder="example@email.com" required>
+            <label>Тема обратной связи:</label>
             <select name="topic">
                 <option value="prog-bug">Баг программы</option>
                 <option value="prog-feat">Улучшение программы</option>
                 <option value="site-bug">Баг сайта</option>
                 <option value="site-feat">Улучшение сайта</option>
+                <option value="question" selected>Вопрос</option>
+                <option value="other">Другое</option>
             </select>
-            <textarea name="message" required></textarea>
-            <button type="submit">Submit</button>
+            <label for="contact-text">Основной блок сообщения:</label>
+            <textarea name="message" id="contact-text" required placeholder="Ваше сообщение"></textarea>
+            <button type="submit" id="contact-submit">Отправить!</button>
         </form>
     </section>
-    <div id="landing-info">
-        the warnings about the fakiness
-    </div>
     <footer>
-        footer
+        <h2>Внимание! Многие элементы этой страницы могут быть ненастоящими.</h2>
+        <h1>FileFlow 2026-2026</h1>
+        Сделано <a href="http://t.me/sliva_varenye">@sliva_varenye</a>
     </footer>
 </body>
 </html>

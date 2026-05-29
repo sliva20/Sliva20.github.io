@@ -85,7 +85,6 @@ document.getElementById("paid-btn").addEventListener("click", () => {
     createPopup("Поддержка", "На самом деле здесь нету FileFlow Pro, но если вы хотите поддержать автора, то можно пожертвовать эти $2. Вы желаете это сделать?", "Ну давай", "https://funpay.com/lots/offer?id=69529450", "Не буду")
 })
 
-document.getElementById("debug").addEventListener("click", () => createPopup("title", "Test msg", "BTN", "BTN2"))
 document.getElementById("contact-form").addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -102,7 +101,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     }
 
     if (isFormValid) {
-        this.submit()
+        // this.submit()
         window.location.hash = 'sent';
     } else {
         switch (reason){
@@ -120,9 +119,11 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
 function checkHash() {
     if (window.location.hash === '#sent') {
         createPopup("Отправлено", "Ваше сообщение было отправлено разработчику! Он вам ответит на указанную электронную почту в скором времени.", "Ура")
-        alert("THANKS")
+        window.location.hash = "";
     }
 }
+
+window.addEventListener("hashchange", checkHash)
 
 if (document.readyState === 'loading') {
     window.addEventListener('DOMContentLoaded', checkHash);

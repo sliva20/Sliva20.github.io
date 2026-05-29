@@ -389,3 +389,7 @@ footer {
     background: linear-gradient(80deg,rgb(7, 16, 54), rgb(2, 2, 22));
     padding: 24px 48px;
 }
+
+footer *{
+    color: gray;
+}
